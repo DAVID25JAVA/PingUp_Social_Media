@@ -16,7 +16,7 @@ function MenuItems() {
             <Link
               key={to}
               href={to}
-              className={`flex items-center gap-3 px-3 py-2 rounded-lg cursor-pointer transition-colors ${
+              className={`flex w-64 items-center gap-3 px-3 py-2 rounded-lg cursor-pointer transition-colors ${
                 isActive 
                   ? "text-indigo-700 bg-indigo-50 px-3   border-indigo-500" 
                   : "text-gray-600 hover:bg-gray-100 hover:text-gray-700"

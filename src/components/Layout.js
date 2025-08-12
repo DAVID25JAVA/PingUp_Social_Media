@@ -6,7 +6,7 @@ import Loading from "./Loading";
 function Layout({ children }) {
   const { isSignedIn, user, isLoaded } = useUser();
 
-  console.log("user login---->", user);
+  // console.log("user login---->", user);
 
   if (!isLoaded) {
     return <Loading />;

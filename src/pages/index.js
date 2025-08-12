@@ -2,10 +2,15 @@ import Image from "next/image";
 import { assets } from "../../public/assets";
 import { Star } from "lucide-react";
 import { SignIn } from "@clerk/nextjs";
-import { SignOutButton } from "@clerk/nextjs";
+import { useUser } from "@clerk/nextjs";
+import Loading from "@/components/Loading";
+
 
 export default function Home() {
-  return (
+
+  const { isLoaded } = useUser();
+
+  return !isLoaded ? (<Loading />) :  (
     <div className="md:max-w-6xl w-full mx-auto xl:px-20">
       <div className="2xl:container 2xl:mx-auto">
         <div className="h-screen w-full ">
