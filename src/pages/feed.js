@@ -2,7 +2,7 @@ import React from 'react'
 
 function feed() {
   return (
-    <div>feed</div>
+    <div className='pt-12 md:pt-1'>feed</div>
   )
 }
 
