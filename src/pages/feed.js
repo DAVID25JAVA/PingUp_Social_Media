@@ -8,13 +8,13 @@ function feed() {
   const [loading, setLoading] = useState(true);
 
   const handleFeed = async () => {
-    await setFeed(dummyPostsData);
+    setFeed(dummyPostsData);
     setLoading(false);
-  }
+  };
 
   useEffect(() => {
-    handleFeed()
-  },[])
+    handleFeed();
+  }, []);
 
   return !loading ? (
     <div className="pt-12 md:pt-1">
